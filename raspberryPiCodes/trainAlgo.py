@@ -56,3 +56,7 @@ def trainKnn():
     import i2c_master
     i2c_master.i2cComm(prediction)
     #print("prediction made")
+    
+    # evaluate accuracy
+    import confusionMatrix
+    confusionMatrix.checkAccuracy(dataset)

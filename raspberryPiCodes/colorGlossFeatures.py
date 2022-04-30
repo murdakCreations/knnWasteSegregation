@@ -1,5 +1,5 @@
 def takeFeatures():
-    file_dir = "/home/pi/Desktop/thesis/dataset-resized/trash/trash111.jpg"     #"/home/pi/Desktop/thesis/test_photo.jpg"
+    file_dir = "/home/pi/Desktop/raspberryPiCodes/dataset-resized/trash/trash111.jpg"     #"/home/pi/Desktop/thesis/test_photo.jpg"
     features = []
     featureCategory = []
     dataset = {}

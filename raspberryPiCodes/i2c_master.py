@@ -4,4 +4,4 @@ def i2cComm(prediction):
     bus = SMBus(1) # indicates /dev/ic2-1
     value = prediction.item(0)
     #print(type(value))
-    bus.write_byte(addr, value)
+    #bus.write_byte(addr, value)
