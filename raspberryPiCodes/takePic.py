@@ -6,6 +6,9 @@ def takePic():
     camera.resolution = (1024, 768)
     camera.start_preview()
 
-    sleep(2)
+    sleep(5)
     camera.capture('test_photo.jpg')
     #print("shot taken")
+    sleep(5)
+    camera.stop_preview()
+    camera.close()

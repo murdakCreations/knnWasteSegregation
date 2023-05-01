@@ -3,7 +3,8 @@ def trainKnn():
     import csv
     import numpy as np
 
-    file = open('colorGlossFeatures.csv')
+    categoriesDisplay = ["paper","plastic","glass","metal","cardboard"]
+    file = open('colorGlossFeaturesUPDATED10-10-22.csv')
     csvreader = csv.reader(file)
     header = []
     header = next(csvreader)
@@ -50,7 +51,9 @@ def trainKnn():
     # make prediction
     prediction = knn.predict(data)
     #print(type(prediction))
-    #print("Prediction: {}".format(prediction))
+    print("Prediction: {}".format(prediction))
+    print(categoriesDisplay[prediction.item(0)])
+    
     
     # send category to i2c aarduino
     import i2c_master
